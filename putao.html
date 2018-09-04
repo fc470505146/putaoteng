@@ -5,34 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Title</title>
     <style>
-        body {
+        body,html {
+            width: 100%;
+            height: 100%;
             margin: 0;
-            background-color:rgb(104,205,213);
+            background-color: rgb(104, 205, 213);
         }
-        div {
-            height: 33%;
+        .top {
+            height: 40%;
         }
-        .logo {
-
+        .top .back img {
+            margin: 10px;
+            width: 30px;
+        }
+       .top .logo {
             text-align: center;
         }
+       .top .logo img {
+           width: 100px;
+       }
         .center {
-            margin-top: 10%;
-            padding: 10%;
+            height: 30%;
             text-align: center;
         }
+        .center p {
+            margin-right: 10%;
+            margin-left: 10%;
+         }
         .bottom {
-            margin-top: 10%;
-            text-align: center;
+
         }
-        .bottom img {
-            margin: 5%;
+        .bottom img:first-child {
+            float: left;
+            margin-left: 10%;
+            width: 80px;
+        }
+        .bottom img:last-child {
+            float: right;
+            margin-right: 10%;
+            width: 80px;
+
+        }
+        .bottom:after {
+            content: '';
+            display: block;
+            clear: both;
         }
     </style>
 </head>
 <body>
-<div>
-    <a href=""><img src="qietu_04.png"></a>
+<div class="top">
+    <div class="img back"><a href=""><img src="qietu_04.png"></a></div>
     <div class="img logo"><img src="qietu_08.png"></div>
 </div>
 <div class="center">
